@@ -35,3 +35,6 @@ export const upcomingGamesURL = () => `${base_url}${upcoming_games}`;
 //New Games
 const new_games = `games?key=f7fd1ce93f584ff88893d692f366cd4e&dates=${lastYear},${currentDate}&ordering=-released&page_size=10`;
 export const newGamesURL = () => `${base_url}${new_games}`;
+//Game Details
+export const gameDetailUrl = (game_id) =>
+  `${base_url}games/${game_id}?key=f7fd1ce93f584ff88893d692f366cd4e`;
