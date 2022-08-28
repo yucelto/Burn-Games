@@ -38,3 +38,6 @@ export const newGamesURL = () => `${base_url}${new_games}`;
 //Game Details
 export const gameDetailUrl = (game_id) =>
   `${base_url}games/${game_id}?key=f7fd1ce93f584ff88893d692f366cd4e`;
+//Game ScreenShots
+export const gameScreenshotUrl = (game_id) =>
+  `${base_url}games/${game_id}/screenshots?key=f7fd1ce93f584ff88893d692f366cd4e`;

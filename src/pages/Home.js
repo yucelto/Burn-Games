@@ -6,6 +6,7 @@ import Game from "../components/Game";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { GameList, Games } from "../styles";
+import GameDetail from "../components/GameDetail";
 
 const Home = () => {
   //Fetch Game
@@ -17,6 +18,7 @@ const Home = () => {
   const { popular, newGames, upcoming } = useSelector((state) => state.games);
   return (
     <GameList>
+      <GameDetail />
       <h2>Upcoming Games</h2>
       <Games>
         {upcoming.map((game) => (
