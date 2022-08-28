@@ -20,6 +20,7 @@ export const StyledGame = styled(motion.div)`
   text-align: center;
   margin: 1rem;
   border-radius: 1rem;
+  cursor: pointer;
   img {
     width: 100%;
   }
